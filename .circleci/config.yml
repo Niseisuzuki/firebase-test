@@ -11,7 +11,7 @@ jobs:
       - run: npm install
       - run:
           name: 'Build Client Code'
-          command: npm webpack
+          command: npm install -save webpack
       - persist_to_workspace:
           root: .
           paths:
